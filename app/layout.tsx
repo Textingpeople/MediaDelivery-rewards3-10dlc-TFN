@@ -13,30 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BenefitBoost — Employee Engagement Platform",
-  description: "Recognize effort, reward performance, and build a culture people love. BenefitBoost is the employee engagement platform that drives real recognition, reduces turnover, and keeps your team motivated.",
-  keywords: "employee benefits, benefits platform, employee recognition, workplace engagement, HR technology",
+  title: "Boost Hub Club — Employee Benefits & Recognition",
+  description: "Boost Hub Club helps employees get more from their benefits and celebrates their wins, through a program their employer provides.",
+  keywords: "employee benefits, benefits engagement, employee recognition, benefits reminders, team challenges",
   openGraph: {
-    title: "BenefitBoost — Employee Engagement Platform",
-    description: "Recognize effort, reward performance, and build a culture people love. The employee engagement platform that drives real recognition and reduces turnover.",
-    url: "https://trybenefitboost.com",
-    siteName: "BenefitBoost",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "BenefitBoost — Employee Engagement Platform",
-      },
-    ],
+    title: "Boost Hub Club — Employee Benefits & Recognition",
+    description: "Boost Hub Club helps employees get more from their benefits and celebrates their wins, through a program their employer provides.",
+    url: "https://boosthubclub.com",
+    siteName: "Boost Hub Club",
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "BenefitBoost — Employee Engagement Platform",
-    description: "Recognize effort, reward performance, and build a culture people love.",
-    images: ["/logo.png"],
+    card: "summary",
+    title: "Boost Hub Club — Employee Benefits & Recognition",
+    description: "Boost Hub Club helps employees get more from their benefits and celebrates their wins, through a program their employer provides.",
   },
   robots: {
     index: true,
@@ -56,22 +47,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLGG52GZ09"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-YLGG52GZ09');
-            `,
-          }}
-        />
-      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased`}
       >
         {children}
       </body>
